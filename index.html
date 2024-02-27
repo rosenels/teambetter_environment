@@ -11,7 +11,7 @@
     <header>
         <nav>
             <div class="logo">
-                <img src="images/Learny_logo_transparent.png">
+                <img src="images/Learny_logo_transparent.png" alt="">
                 <h1>Learny</h1>
             </div>
             <ul class="nav-links">
@@ -57,17 +57,17 @@
         <div class="container">
             <h2>Основни предимства</h2>
             <div class="feature">
-                <img src="images/resources.png">
+                <img src="images/resources.png" alt="">
                 <h3>Широк набор от ресурси</h3>
                 <p>Достъп до множество различни ресурси, включително тестове, уроци, видеоклипове и игри.</p>
             </div>
             <div class="feature">
-                <img src="images/AI_matcher.png">
+                <img src="images/AI_matcher.png" alt="">
                 <h3>Интелигентно намиране</h3>
                 <p>Нашият изкуствен интелект свързва кандидатите с позиции въз основа на техните умения и предпочитания, оценява ги и дори ги класира въз основа на тяхното представяне.</p> <!-- Нашият изкуствен интелект свързва кандидатите с позиции въз основа на техните умения и предпочитания, като гарантира най-доброто прилягане и за двете страни. -->
             </div>
             <div class="feature">
-                <img src="images/results_filtering.png">
+                <img src="images/results_filtering.png" alt="">
                 <h3>Ефективен и качествен подбор на кадри</h3>
                 <p>Рационализиран процес на наемане, получавайки класирани списъци с кандидати, спестявайки време и усилия в процеса на подбор.</p>
             </div>
@@ -83,17 +83,27 @@
 
             <!-- В момента не работи, но ще започне да работи, когато получим домейн и хостинг. Не променяйте нищо в кода на тази форма, защото вероятно ще спре да работи! -->
             <form action="https://formsubmit.co/rosen1710@abv.bg" enctype="multipart/form-data" method="POST">
-                <input type="text" name="name" placeholder="Име и фамилия" required>
+                <label>
+                    <input type="text" name="name" placeholder="Име" required>
+                </label>
                 <!-- <br> -->
-                <input type="email" name="email" placeholder="Имейл адрес" required>
+                <label>
+                    <input type="email" name="email" placeholder="Имейл адрес" required>
+                </label>
                 <!-- <br> -->
-                <input type="text" name="_subject" placeholder="Тема" required>
+                <label>
+                    <input type="text" name="_subject" placeholder="Тема" required>
+                </label>
                 <!-- <br> -->
-                <textarea name="message" placeholder="Детайли" required></textarea>
+                <label>
+                    <textarea name="message" placeholder="Детайли" required></textarea>
+                </label>
                 <!-- <br>
                 <br> -->
                 <!-- <input type="hidden" name="_cc" value="other@mail.bg"> -->
-                <input type="text" name="_honey" style="display: none">
+                <label>
+                    <input type="text" name="_honey" style="display: none">
+                </label>
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="box">
                 <input type="hidden" name="_next" value="https://contact.rosen1710.repl.co/thankyou.html">
