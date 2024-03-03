@@ -171,7 +171,7 @@ form textarea {
     border-radius: 5px;
 }
 
-form button, button#learn-more-button {
+button {
     padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
@@ -181,7 +181,7 @@ form button, button#learn-more-button {
     transition: background-color 0.3s ease;
 }
 
-form button:hover, button#learn-more-button:hover {
+button:hover {
     background-color: #0056b3;
 }
 
