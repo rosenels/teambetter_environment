@@ -12,8 +12,8 @@
                 <!-- <h2>Контакти</h2>
                 <p>Имате въпрос или искате да споделите вашата обратна връзка? Не се колебайте да се свържете с нас чрез тази форма.</p>
                 <br> -->
-    
-                <form action="https://formsubmit.co/82178fb67c863ee98eabc21e7b4a99f8" enctype="multipart/form-data" method="POST">
+
+                <form method="POST" action="sendForm.php" class="contact-form">
                     <label>
                         <input type="text" name="name" placeholder="Име" required>
                     </label>
@@ -21,18 +21,11 @@
                         <input type="email" name="email" placeholder="Имейл адрес" required>
                     </label>
                     <label>
-                        <input type="text" name="_subject" placeholder="Тема" required>
+                        <input type="text" name="subject" placeholder="Тема" required>
                     </label>
                     <label>
                         <textarea name="message" placeholder="Детайли" required></textarea>
                     </label>
-                    <!-- <input type="hidden" name="_cc" value="other@mail.bg"> -->
-                    <label>
-                        <input type="text" name="_honey" style="display: none">
-                    </label>
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_template" value="box">
-                    <input type="hidden" name="_next" value="https://irinpharma.com/wematch-contactform/thankyou.html">
                     <button type="submit">Изпрати</button>
                 </form>
             </div>

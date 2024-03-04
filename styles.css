@@ -200,5 +200,5 @@ footer p {
 textarea {
     resize: vertical;
     min-height: 80px;
-    max-height: 300px;
+    max-height: 200px;
 }
