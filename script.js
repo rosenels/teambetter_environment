@@ -1,7 +1,7 @@
 function fix_navbar() {
     elements = document.getElementsByClassName("nav-links");
     for (i = 0; i < elements.length; i++) {
-        if (elements[i].getBoundingClientRect().right > window.outerWidth) {
+        if (elements[i].getBoundingClientRect().right > window.outerWidth || elements[i].getBoundingClientRect().bottom < 0) {
             elements[i].style.display = "none";
         }
         else {
@@ -9,5 +9,5 @@ function fix_navbar() {
         }
     }
 }
-window.onload = fix_navbar;
+fix_navbar();
 window.onresize = fix_navbar;
