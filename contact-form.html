@@ -7,13 +7,13 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body style="background-color: transparent;">
-        <section id="contact" style="background-color: transparent; padding-top: 10px;">
+        <section id="contact" style="background-color: transparent;">
             <div class="container">
                 <!-- <h2>Контакти</h2>
                 <p>Имате въпрос или искате да споделите вашата обратна връзка? Не се колебайте да се свържете с нас чрез тази форма.</p>
                 <br> -->
 
-                <form method="POST" action="sendForm.php" class="contact-form">
+                <form method="POST" action="sendForm.php" class="contact-form" onsubmit="deactivate()">
                     <label>
                         <input type="text" name="name" placeholder="Име" required>
                     </label>
@@ -26,9 +26,16 @@
                     <label>
                         <textarea name="message" placeholder="Детайли" required></textarea>
                     </label>
-                    <button type="submit">Изпрати</button>
+                    <button type="submit" id="submit-button">Изпрати</button>
+                    <button type="button" id="onsending-button" style="display: none; background-color: #0056b3; cursor: default;">Изпраща се...</button>
                 </form>
             </div>
         </section>
+        <script>
+            function deactivate() {
+                document.getElementById("submit-button").style.display = "none";
+                document.getElementById("onsending-button").style.display = "block";
+            }
+        </script>
     </body>
 </html>
