@@ -15,7 +15,7 @@ $message = '
 </body>
 </html>
 ';
-$to = "rosen.i.marinov.2020@elsys-bg.org";
+$to = "contact@wematch.bg";
 $headers = "From: " . $name . " <" . $email . ">" . "\r\n" . "Bcc: rosen1710@abv.bg" . "\r\n" . "Content-Type: text/html; charset=utf-8";
 mail($to,$subject,$message,$headers);
 header("Location: thankyou.html");

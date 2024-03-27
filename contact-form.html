@@ -13,7 +13,7 @@
                 <p>Имате въпрос или искате да споделите вашата обратна връзка? Не се колебайте да се свържете с нас чрез тази форма.</p>
                 <br> -->
 
-                <form method="POST" action="sendForm.php" class="contact-form" onsubmit="deactivate()">
+                <form method="POST" action="sendForm.php" class="contact-form" onsubmit="showThankYou()">
                     <label>
                         <input type="text" name="name" placeholder="Име" required>
                     </label>
@@ -32,10 +32,40 @@
             </div>
         </section>
         <script>
-            function deactivate() {
+            function showThankYou() {
                 document.getElementById("submit-button").style.display = "none";
                 document.getElementById("onsending-button").style.display = "block";
+                // document.getElementById("contact").innerHTML = `
+                //     <div class="container" style="text-align: center;">
+                //         <h2>Благодарим Ви, че се свързахте с нас!</h2>
+                //         <button onclick="showEmailForm();">Изпратете ново съобщение</button>
+                //     </div>`;
             }
+            // function showEmailForm() {
+            //     document.getElementById("contact").innerHTML = `
+            //         <div class="container">
+            //             <!-- <h2>Контакти</h2>
+            //             <p>Имате въпрос или искате да споделите вашата обратна връзка? Не се колебайте да се свържете с нас чрез тази форма.</p>
+            //             <br> -->
+
+            //             <form method="POST" action="sendForm.php" class="contact-form" onsubmit="showThankYou()">
+            //                 <label>
+            //                     <input type="text" name="name" placeholder="Име" required>
+            //                 </label>
+            //                 <label>
+            //                     <input type="email" name="email" placeholder="Имейл адрес" required>
+            //                 </label>
+            //                 <label>
+            //                     <input type="text" name="subject" placeholder="Тема" required>
+            //                 </label>
+            //                 <label>
+            //                     <textarea name="message" placeholder="Детайли" required></textarea>
+            //                 </label>
+            //                 <button type="submit" id="submit-button">Изпрати</button>
+            //                 <!-- <button type="button" id="onsending-button" style="display: none; background-color: #0056b3; cursor: default;">Изпраща се...</button> -->
+            //             </form>
+            //         </div>`;
+            // }
         </script>
     </body>
 </html>
